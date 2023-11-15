@@ -1,0 +1,26 @@
+
+*{color: red}
+p{
+  text-align: center; 
+}
+.miclase{
+    border: solid 1px blue;
+}
+#miidentificador{
+background-color: yellow;
+}
+ul,li {
+    background-color: gray;
+}
+p>a {
+    background-color: blueviolet;
+}
+p+div {
+    border: 2px dotted black;
+}
+p[lang]{
+    background-color: aquamarine;
+}
+p[lang="es"]{  /* no separar el p del lang*/
+    background-color: blue;
+}

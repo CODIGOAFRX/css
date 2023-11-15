@@ -1,0 +1,30 @@
+<!--dentro de la etiqueta de style -->
+<!--<link rel = "stylesheet" type= ""-text/css" href= ""       ESTA ES LA MÁS CORRECTA prevalece por herencia.
+Dentro de las etiquetas
+
+Selector {propiedad: valor} pe:   
+    h1 {
+    color: red;
+    font-weight: bold;
+    font-size:12
+    }
+
+TIPOS DE SELECTORES:
+ - Siempre van del más específico al menos, el menos especifico es el "*" PE:
+ * {                   /// * es universal!!
+    color: red;
+ } 
+TODO EL TEXTO LO PONDRÍA ROJO
+<etiqueta>
+    - Si pusieramos por ejemplo un <h1>  sería h1{ color : white} /// Los h1 estarían en blanco pero el restto de los textos seguirían en rojo.
+
+    <h1 id="atribut"> /// se llamaría al css con el #atribut{ color : white} // son los más específicos smp
+    clase / class="atribut" / "."    .atribut { color : white} // es igual que el id pero se puede repetir, el id es unico!
+
+    descendente/ etiquetas clases id/ h1 h2 { color : white} // te pone blanco solo al h2 que está dentro de h1!
+    agrupacion/ etiquetas clases id/ h1 , h2, h3{ color : blue} //afecta a todos por igual
+    selectores hijos mayor / etiquetas clases id/ h1 > h2 {color : blue }  // afecta solo al inmediatamente despues! es decir al primer h2 que está dentro de h1, si hay algo enmedio no!
+    adyacente (brothel)/ etiquetas clases id/ h1 + h2 { color : gold} // tienen que estar dentro de la misma etiqueta (padre) y estar seguidas una de otra de forma ininterrumpida.
+    atributo / p [nombre atributo] { color : blue } // otra opcion p [nombreatributo = "valor"]{ color : blue } 
+    // los primeros solo los que tengan ese atributo tengan el valor que tengan... sin embargo la 2os los que tengan el valor del atributo en específico 
+->
